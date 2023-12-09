@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(130, 236, 236);
+    font-size: large;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+h1{
+    color: antiquewhite;
+
+}
+#um{
+    text-align: center;
+    font-size: larger;
+    color: black;
+
+}
+
+h2{color: rgb(220, 150, 58);}
+
+.basico{
+    color: rgb(4, 186, 125);
+}
+.inter{
+    color: aquamarine;
+}
+
+.avan{
+    color: rgb(89, 121, 110);
+}
