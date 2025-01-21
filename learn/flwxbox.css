@@ -1,0 +1,76 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    line-height: 1.6;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+div.container{
+
+    height: 600px;
+    width: 70%;
+    border: 7px solid black;
+
+    }
+div.item{
+    border-radius: 20px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    border: 2px solid red;
+    background-color: rgb(147, 29, 29);
+}
+p{
+    color: aliceblue;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    align-content: normal;
+    gap: 20px;
+}
+/*.item-1{
+    flex-grow: 1;
+}*/
+
+/*.item-2{
+    flex-shrink: 6;
+    flex-basis:0;
+    flex:1;
+}*/
+.item-3{
+    order: -1;
+
+    align-self: flex-start;
+}
+
+
+
+/*
+---justify-content permite alinharmos cenas no eixo principal
+---display nos permite organizarmos as cenas da forma q quisermos
+---flex-direction permite escolher qual é o eixo principal(collum é vertical, row é horixontal)
+---align-items é tipo justify content, mas se pores row, ele edita na cena d collum, e vice versa, a cena baseline,faz com q a escrita fique na linha base, q marca os eixos
+---flex-wrap permite fazer com q as cenas quebrem d linha e passem pra proxima
+---align-content permite fazer o mesmo q justify content, soq com regras de align items, só usavel se termos wrap
+---gap permite por espaços no meio d tudo, como o nome ja disse, GAP
+---flex-grow permite escolhermos qual cena irá ter prioridade de crescer quando a tela for expandida
+---flex-shrink é o contrario d flex grow
+---flex-basis permite overwritte a width de algo
+---flex é flex grow, shrink e basis no mesmo
+---align-self é o mesmo q align items soq com uma cena só
+---order permite mudar as posiçoes d cada cena, o vlaor inicial é 0, se quiseres 3 aparecer em primeiro, farias order:-1; se quisesses por 1 em ultimo, farias order:1;, o 1 ficaria em ultimo porque o vlr de 2 é 0
+
