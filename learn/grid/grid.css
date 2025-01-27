@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+}
+.cont{
+    border: 10px solid rgb(255, 255, 255);
+    background-color: rgb(255, 89, 89);
+}
+.item{
+    background-color: rgb(202, 189, 189);
+    border: 4px solid red;
+}
+
+
+.cont{
+    grid-auto-flow: column;
+    grid-auto-rows: 100px;
+    display: grid; 
+    grid-template-columns:100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px ;
+}
+
+.item-1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    /*grid-row: 1/3;
+    grid-column: 1/6;*/
+}
+
+.item-2{
+    /*grid-row: span 2;
+    grid-column: span 3;*/
+    grid-area: 2/3/4/5;
+    z-index: 1;
+
+}
+.item-3{
+    grid-area: 3/1/-1/-1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+---grid template rows serve pra metermos quantas rows o grid terá
+---grid template collums serve pra metermos quantas collums o grid terá
+
+
+---grid row start serve pra dzr onde q o item deve começar numa row
+---grid row end serve pra dzr onde q o item deve acabar numa row
+---grid collum start serve pra dzr onde q o item deve começar numa collum
+---grid collum end serve pra dzr onde q o item deve acabar numa collum
+
+---grid row, é o mesmo d grid row start e end, soq pequeno, grid-row: nr q cmc / nr q acaba;
+---grid collum, é o mesmo d grid row start e end, soq pequeno, grid-collum: nr q cmc / nr q acaba;
+
+---grid area, é o mesmo que todos os outros em cima, soq q faz todos ao msm time, grid-area:nr d cmcr d row/nr d cmcr d collum/nr d acbr d row/nr d acbr d collum;
+
+---Span, invez d pormos valores de inicio/fim, podemos dizer "span 2" para dizer para o item se expandir 2 vezes, ou seja nas rows ou nas collums
+
+
+---z index, serve p por em q camada o item esta
+
+quando pomos um novo ite, n tendo espaço, irá automaticamnete criar um nova row/colum, que será chamada "implicit row/collum"
+
+---grid auto row/collum, permite darmos o tamos das implicit row/collum
+---grid auto flow, permite escolher se e cena implicit é uma row ou colum
+*/
