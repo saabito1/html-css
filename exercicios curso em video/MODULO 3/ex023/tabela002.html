@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables
+    </title>
+    <style>
+        body{
+            font-family:'Times New Roman', Times, serif ;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+        }
+        td, th{
+            padding: 10px;
+            border: 1px solid black;
+
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>uso d tabelas grandes</h1>
+    <table>
+        <caption>População de mozambique</caption>
+        <thead>
+            <tr>
+                <th scope="col">
+                    estado
+                </th>
+                <th scope="col">
+                    populção
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maputo</td>
+                <td class="num">49882</td>
+            </tr>
+            <tr>
+                <td>Beira</td>
+                <td class="num">37682</td>
+            </tr>
+            <tr>
+                <td>Cabo Delegado</td>
+                <td class="num">23882</td>
+            </tr>
+            <tr>
+                <td>Tete</td>
+                <td class="num">35212</td>
+            </tr>
+            <tr>
+                <td>Gaza</td>
+                <td class="num">25692</td>
+            </tr>
+            <tr>
+                <td>Zambezia</td>
+                <td class="num">45882</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="num">61282</td>
+            </tr>
+            <tr>
+                <td>Manica</td>
+                <td class="num">23562</td>
+            </tr>
+            <tr>
+                <td>Inhambane</td>
+                <td class="num">30212</td>
+            </tr>
+            <tr>
+                <td>Niassa</td>
+                <td class="num">30692</td>
+            </tr>
+
+
+
+        </tbody>
+        <tfoot>
+            <th scope="row ">total</th>
+            <td class="num ">1129810</td>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
