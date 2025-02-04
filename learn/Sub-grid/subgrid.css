@@ -1,24 +1,26 @@
 *,
 *::before,
 *::after{
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 
 *{
-    margin: 0;
-}
+    margin: 0;}
 
 body{
+    font-family: system-ui;
     margin-inline:auto;
-}
+    width: 90%;}
+
+
+img{
+    display: block;
+    max-width: 100%;}
 
 
 .wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+ 
 
-}
-img{
-    display: block;
-    max-width: 100%;
+
 }
