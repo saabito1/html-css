@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>meu primeiro Formulario</h1>
+    <form action="cadastro.php" method="post">
+        <p><label for="iest">Estado:</label>
+            <select name="est" id="iest">
+                <optgroup label="o e c">
+                    <option value="ollllaaaaaaa">ollllaaaaaaa</option>
+                    <option value="cala-te">ala-te</option>
+                </optgroup>
+                
+
+                <optgroup label="b e o">
+                    <option value="bacaxi">acaxi</option>
+                    <option value="opppaaaa">opppaa</option>
+                </optgroup>
+            </select>
+        
+        </p>
+        <p>
+            
+            <label for="iprof">Profissão:</label> 
+            <input type="text" name="prof" id="iprof" list="lista">
+            <datalist id="lista">
+                <option value="1">Professor</option>
+                <option value="2">Estudante</option>
+                <option value="3">Jogador</option>
+            </datalist>
+        
+        
+        </p>
+
+
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea><br>
+        </p>
+
+
+
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    
+</body>
+</html>
