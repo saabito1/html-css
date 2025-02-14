@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medie querrie</title>
+
+    <style>
+
+        /*gerais*/
+        @charset "UTF-8";
+
+
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1{
+            color: white;
+            padding: 10px;
+            text-shadow: 3px 3px 0px blue;
+}
+
+
+        /*landscape*/
+        @media screen and (orientation:landscape) {
+            body{
+                background-image: url(../Imagens/cev-landscape.jpg);
+                background-position: left bottom;
+            }
+            
+        }
+        
+
+
+
+        /*portrait*/
+        @media screen and (orientation:portrait) {
+            body{
+                background-image: url(../Imagens/cev-portrait.jpg);
+                background-position: center bottom;
+            }
+
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>
