@@ -6,8 +6,9 @@
     <title>Média Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="stylesheet" href="Estilos/media.css">
 </head>
-<body>
+<body onresize="mudouT()">
     <header>
         <h1>Meu site</h1>
         <i id="bur" class="material-icons" onclick="clicam()">menu</i>
@@ -43,6 +44,14 @@
                 itens.style.display = 'block'
             }
 
+        }
+
+        function mudouT(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                 itens.style.display = 'none'
+            }
         }
     </script>
 </body>
